@@ -1,0 +1,73 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.body {
+  font-size: 10px;
+}
+
+.grid-container {
+  display: grid;
+  color: black;
+  font-size: 4rem;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 100px 500px 300px;
+  gap: 30px 100px;
+}
+
+.grid {
+  display: flex;
+}
+.grid__item {
+  background-color: grey;
+  border: 1px solid red;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.grid:nth-child(odd) {
+  background-color: blue;
+}/*# sourceMappingURL=style.css.map */

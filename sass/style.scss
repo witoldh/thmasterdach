@@ -1,0 +1,33 @@
+@use './reset' as *;
+
+.body {
+    font-size: 10px;
+
+}
+.grid-container {
+
+    display: grid;
+    color: black;
+    font-size: 4rem;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 100px 500px 300px;
+    gap: 30px 100px;
+    // &:nth-child(even) {
+    //     background-color: blue;
+    // }
+}
+
+.grid {
+    display: flex;
+    &__item{
+        background-color: grey;
+        border: 1px solid red;
+        align-items: center;
+        align-content:center;
+        justify-content: center;
+
+    
+    }
+    &:nth-child(odd) {
+        background-color: blue;}
+}
